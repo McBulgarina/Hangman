@@ -1,0 +1,58 @@
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static int gameOver = 9;
+        static void Main(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            GameDraw();
+            GameMenu();
+        }
+        static void GameDraw()
+        {
+            Console.SetCursorPosition(10, 2);
+            Console.Write("===========");
+
+            Console.SetCursorPosition(10, 6);
+            Console.Write("===========");
+
+            for (int y = 3; y < 6; y++)
+            {
+                Console.SetCursorPosition(10, y);
+                Console.Write("|");
+                Console.SetCursorPosition(20, y);
+                Console.Write("|");
+            }
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.SetCursorPosition(12, 4);
+            Console.Write("HANGMAN");
+            Console.ResetColor();
+        }
+        static void GameMenu()
+        {
+            Console.SetCursorPosition(1, 9);
+            Console.WriteLine("Choose an option: \n1. Start a new game of Hangman\n2. See recent games\n3. Exit");
+            string answer = Console.ReadLine();
+            switch (answer)
+            {
+                case "1":
+                    Console.Clear();
+                    GameStart();
+                    break;
+                case "2":
+                    break;
+                case "3":
+                    break;
+            }
+        }
+        static void GameStart()
+        {
+            GameDraw();
+            while (gameOver > 0)
+            {
+
+            }
+        }
+    }
+}
