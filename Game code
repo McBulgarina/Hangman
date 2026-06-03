@@ -1,14 +1,47 @@
-namespace ConsoleApp3
+using System;
+using System.Collections.Generic;
+using System.Text.Json;
+
+namespace Hangman
 {
+    public class WordEntry
+    {
+        public string word { get; set; }
+        public string group { get; set; }
+    }
+    public class GroupedWords
+    {
+        public string group { get; set; }
+        public List<string> words { get; set; }
+    }
     internal class Program
     {
         static int gameOver = 9;
+
+        static (string word, string group) GetRandomWord(string filePath = "words.json")
+        {
+            var json = File.ReadAllText(filePath);
+            var groupsDict = JsonSerializer.Deserialize<Dictionary<string, List<string>>>(json);
+
+            if (groupsDict == null || groupsDict.Count == 0)
+                throw new Exception("No words found in JSON.");
+
+            var allWords = groupsDict
+                .SelectMany(kvp => kvp.Value.Select(word => new WordEntry { word = word, group = kvp.Key }))
+                .ToList();
+
+            var random = new Random();
+            var entry = allWords[random.Next(allWords.Count)];
+            return (entry.word, entry.group);
+        }
+
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Magenta;
             GameDraw();
             GameMenu();
         }
+
         static void GameDraw()
         {
             Console.SetCursorPosition(10, 2);
@@ -29,10 +62,11 @@ namespace ConsoleApp3
             Console.Write("HANGMAN");
             Console.ResetColor();
         }
+
         static void GameMenu()
         {
             Console.SetCursorPosition(1, 9);
-            Console.WriteLine("Choose an option: \n1. Start a new game of Hangman\n2. See recent games\n3. Exit");
+            Console.WriteLine("Choose an option: \n1. Start a new game of Hangman\n2. See recent games\n3. Rules\n4. Exit");
             string answer = Console.ReadLine();
             switch (answer)
             {
@@ -44,15 +78,183 @@ namespace ConsoleApp3
                     break;
                 case "3":
                     break;
+                case "4":
+                    break;
             }
         }
+
         static void GameStart()
         {
-            GameDraw();
+            var (word, group) = GetRandomWord("words.json");
+            Console.WriteLine($"Random word: {word}, Group: {group}");
+
+            int mistakes = 9 - gameOver;
             while (gameOver > 0)
             {
+                switch (mistakes)
+                {
+                    case 0:
+                        Console.Clear();
+                        GameDraw();
+                        Console.SetCursorPosition(1, 11);
+                        Console.WriteLine(@"
 
+
+
+
+
+
+    =======================");
+                        break;
+
+                    case 1:
+                        Console.Clear();
+                        GameDraw();
+                        Console.SetCursorPosition(1, 11);
+                        Console.WriteLine(@"
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    =======================");
+                        break;
+
+                    case 2:
+                        Console.Clear();
+                        GameDraw();
+                        Console.SetCursorPosition(1, 11);
+                        Console.WriteLine(@"______________________
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    =======================");
+                        break;
+
+                    case 3:
+                        Console.Clear();
+                        GameDraw();
+                        Console.SetCursorPosition(1, 11);
+                        Console.WriteLine(@"______________________
+    |          |
+    |          |
+    |
+    |
+    |
+    |
+    |
+    =======================");
+                        break;
+
+                    case 4:
+                        Console.Clear();
+                        GameDraw();
+                        Console.SetCursorPosition(1, 11);
+                        Console.WriteLine(@"______________________
+    |          |
+    |          |
+    |          O
+    |
+    |
+    |
+    |
+    =======================");
+                        break;
+
+                    case 5:
+                        Console.Clear();
+                        GameDraw();
+                        Console.SetCursorPosition(1, 11);
+                        Console.WriteLine(@"______________________
+    |          |
+    |          |
+    |          O
+    |         /
+    |
+    |
+    |
+    =======================");
+                        break;
+
+                    case 6:
+                        Console.Clear();
+                        GameDraw();
+                        Console.SetCursorPosition(1, 11);
+                        Console.WriteLine(@"______________________
+    |          |
+    |          |
+    |          O
+    |         /|
+    |
+    |
+    |
+    =======================");
+                        break;
+
+                    case 7:
+                        Console.Clear();
+                        GameDraw();
+                        Console.SetCursorPosition(1, 11);
+                        Console.WriteLine(@"______________________
+    |          |
+    |          |
+    |          O
+    |         /|\
+    |
+    |
+    |
+    =======================");
+                        break;
+
+                    case 8:
+                        Console.Clear();
+                        GameDraw();
+                        Console.SetCursorPosition(1, 11);
+                        Console.WriteLine(@"______________________
+    |          |
+    |          |
+    |          O
+    |         /|\
+    |         / 
+    |
+    |
+    =======================");
+                        break;
+
+                    case 9:
+                        Console.Clear();
+                        GameDraw();
+                        Console.SetCursorPosition(1, 11);
+                        Console.WriteLine(@"______________________
+    |          |
+    |          |
+    |          O
+    |         /|\
+    |         / \
+    |
+    |
+    =======================");
+                        break;
+                }
+                char input = Console.ReadKey().KeyChar;
+                Checker(word, input);
             }
+        }
+
+        static void Checker(string word, char a)
+        {
+            bool check = false;
+            foreach (char c in word)
+            {
+                if (c == a) { check = true; }
+            }
+            if (check == false) { gameOver++; }
         }
     }
 }
