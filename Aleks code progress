@@ -1,0 +1,163 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static int gameOver = 0;
+        static void Main(string[] args)
+        {
+            string inputWord = Console.ReadLine();
+        }
+        static void Besenica(int mistakes)
+        {
+            switch (mistakes)
+            {
+                case 0:
+                    Console.Clear();
+                    Console.WriteLine(@"
+
+
+
+
+
+
+
+=======================");
+                    break;
+
+                case 1:
+                    Console.Clear();
+                    Console.WriteLine(@"
+|
+|
+|
+|
+|
+|
+|
+=======================");
+                    break;
+
+                case 2:
+                    Console.Clear();
+                    Console.WriteLine(@"______________________
+|
+|
+|
+|
+|
+|
+|
+=======================");
+                    break;
+
+                case 3:
+                    Console.Clear();
+                    Console.WriteLine(@"______________________
+|          |
+|          |
+|
+|
+|
+|
+|
+=======================");
+                    break;
+
+                case 4:
+                    Console.Clear();
+                    Console.WriteLine(@"______________________
+|          |
+|          |
+|          O
+|
+|
+|
+|
+=======================");
+                    break;
+
+                case 5:
+                    Console.Clear();
+                    Console.WriteLine(@"______________________
+|          |
+|          |
+|          O
+|         /
+|
+|
+|
+=======================");
+                    break;
+
+                case 6:
+                    Console.Clear();
+                    Console.WriteLine(@"______________________
+|          |
+|          |
+|          O
+|         /|
+|
+|
+|
+=======================");
+                    break;
+
+                case 7:
+                    Console.Clear();
+                    Console.WriteLine(@"______________________
+|          |
+|          |
+|          O
+|         /|\
+|
+|
+|
+=======================");
+                    break;
+
+                case 8:
+                    Console.Clear();
+                    Console.WriteLine(@"______________________
+|          |
+|          |
+|          O
+|         /|\
+|         / 
+|
+|
+=======================");
+                    break;
+
+                case 9:
+
+                    Console.Clear();
+                    Console.WriteLine(@"______________________
+|          |
+|          |
+|          O
+|         /|\
+|         / \
+|
+|
+=======================");
+                    break;
+
+            }
+        }
+        static void Checker(string word, char a)
+        {
+            bool check = false;
+            foreach (char c in word)
+            {
+                if (c == a) { check = true; } 
+            }
+            if (check == false) { gameOver++; }
+        }
+    }
+}
