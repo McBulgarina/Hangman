@@ -1,508 +1,1996 @@
 {
-    "Technology": [
-      "computer",
-      "laptop",
-      "desktop",
-      "keyboard",
-      "mouse",
-      "monitor",
-      "printer",
-      "scanner",
-      "webcam",
-      "microphone",
-      "speaker",
-      "headphones",
-      "smartphone",
-      "tablet",
-      "smartwatch",
-      "server",
-      "router",
-      "switch",
-      "firewall",
-      "modem",
-      "database",
-      "cloud",
-      "software",
-      "hardware",
-      "firmware",
-      "application",
-      "platform",
-      "framework",
-      "library",
-      "api",
-      "algorithm",
-      "compiler",
-      "debugger",
-      "repository",
-      "git",
-      "docker",
-      "kubernetes",
-      "container",
-      "virtualization",
-      "encryption",
-      "cybersecurity",
-      "authentication",
-      "authorization",
-      "blockchain",
-      "cryptography",
-      "artificialintelligence",
-      "machinelearning",
-      "neuralnetwork",
-      "datascience",
-      "analytics",
-      "automation",
-      "robotics",
-      "sensor",
-      "actuator",
-      "drone",
-      "satellite",
-      "processor",
-      "cpu",
-      "gpu",
-      "memory",
-      "ram",
-      "ssd",
-      "harddrive",
-      "network",
-      "bandwidth",
-      "protocol",
-      "tcp",
-      "udp",
-      "http",
-      "https",
-      "dns",
-      "domain",
-      "hosting",
-      "backend",
-      "frontend",
-      "fullstack",
-      "javascript",
-      "typescript",
-      "python",
-      "csharp",
-      "java",
-      "golang",
-      "rust",
-      "php",
-      "ruby",
-      "linux",
-      "windows",
-      "android",
-      "ios",
-      "macos",
-      "ubuntu",
-      "debian",
-      "archlinux",
-      "terminal",
-      "shell",
-      "script",
-      "microservice",
-      "datacenter",
-      "edgecomputing",
-      "quantumcomputing"
-    ],
-    "Travel": [
-      "airport",
-      "airplane",
-      "passport",
-      "visa",
-      "ticket",
-      "boardingpass",
-      "hotel",
-      "hostel",
-      "resort",
-      "motel",
-      "villa",
-      "apartment",
-      "backpack",
-      "suitcase",
-      "luggage",
-      "journey",
-      "trip",
-      "vacation",
-      "holiday",
-      "adventure",
-      "tour",
-      "excursion",
-      "expedition",
-      "cruise",
-      "train",
-      "station",
-      "bus",
-      "taxi",
-      "subway",
-      "tram",
-      "ferry",
-      "rentalcar",
-      "roadtrip",
-      "highway",
-      "itinerary",
-      "reservation",
-      "accommodation",
-      "checkin",
-      "checkout",
-      "customs",
-      "immigration",
-      "departure",
-      "arrival",
-      "terminal",
-      "gate",
-      "runway",
-      "pilot",
-      "captain",
-      "guide",
-      "tourist",
-      "traveler",
-      "landmark",
-      "monument",
-      "museum",
-      "gallery",
-      "castle",
-      "palace",
-      "cathedral",
-      "temple",
-      "mosque",
-      "beach",
-      "island",
-      "mountain",
-      "forest",
-      "desert",
-      "waterfall",
-      "canyon",
-      "valley",
-      "lake",
-      "river",
-      "village",
-      "town",
-      "city",
-      "country",
-      "continent",
-      "navigation",
-      "map",
-      "compass",
-      "guidebook",
-      "souvenir",
-      "photography",
-      "camping",
-      "hiking",
-      "trekking",
-      "backpacking",
-      "sightseeing",
-      "adrenaline",
-      "culture",
-      "heritage",
-      "festival",
-      "cuisine",
-      "exploration",
-      "border",
-      "timezone",
-      "travelinsurance",
-      "currencyexchange",
-      "adventuretour",
-      "ecotourism",
-      "staycation"
-    ],
-    "Food": [
-      "pizza",
-      "burger",
-      "sandwich",
-      "pasta",
-      "spaghetti",
-      "lasagna",
-      "ravioli",
-      "salad",
-      "soup",
-      "stew",
-      "chicken",
-      "beef",
-      "pork",
-      "lamb",
-      "turkey",
-      "duck",
-      "fish",
-      "salmon",
-      "tuna",
-      "shrimp",
-      "crab",
-      "lobster",
-      "rice",
-      "bread",
-      "bagel",
-      "croissant",
-      "toast",
-      "butter",
-      "cheese",
-      "milk",
-      "yogurt",
-      "cream",
-      "egg",
-      "bacon",
-      "sausage",
-      "omelet",
-      "pancake",
-      "waffle",
-      "cereal",
-      "oatmeal",
-      "apple",
-      "banana",
-      "orange",
-      "grape",
-      "pear",
-      "peach",
-      "plum",
-      "mango",
-      "pineapple",
-      "watermelon",
-      "strawberry",
-      "blueberry",
-      "raspberry",
-      "blackberry",
-      "potato",
-      "tomato",
-      "onion",
-      "garlic",
-      "carrot",
-      "broccoli",
-      "spinach",
-      "lettuce",
-      "cucumber",
-      "pepper",
-      "mushroom",
-      "zucchini",
-      "eggplant",
-      "avocado",
-      "corn",
-      "beans",
-      "lentils",
-      "chickpeas",
-      "coffee",
-      "tea",
-      "juice",
-      "smoothie",
-      "soda",
-      "water",
-      "cake",
-      "cookie",
-      "brownie",
-      "muffin",
-      "donut",
-      "chocolate",
-      "icecream",
-      "candy",
-      "sushi",
-      "taco",
-      "burrito",
-      "quesadilla",
-      "dumpling",
-      "curry",
-      "noodles",
-      "ramen",
-      "pho",
-      "kimchi",
-      "falafel",
-      "hummus",
-      "paella"
-    ],
-    "Sports": [
-      "football",
-      "soccer",
-      "basketball",
-      "baseball",
-      "softball",
-      "tennis",
-      "golf",
-      "volleyball",
-      "cricket",
-      "rugby",
-      "hockey",
-      "badminton",
-      "squash",
-      "tabletennis",
-      "handball",
-      "lacrosse",
-      "swimming",
-      "diving",
-      "waterpolo",
-      "surfing",
-      "rowing",
-      "canoeing",
-      "kayaking",
-      "sailing",
-      "cycling",
-      "bmx",
-      "running",
-      "jogging",
-      "marathon",
-      "sprint",
-      "triathlon",
-      "duathlon",
-      "athletics",
-      "highjump",
-      "longjump",
-      "polevault",
-      "shotput",
-      "discus",
-      "javelin",
-      "relay",
-      "boxing",
-      "wrestling",
-      "mma",
-      "karate",
-      "judo",
-      "taekwondo",
-      "fencing",
-      "archery",
-      "weightlifting",
-      "powerlifting",
-      "bodybuilding",
-      "gymnastics",
-      "parkour",
-      "climbing",
-      "bouldering",
-      "skiing",
-      "snowboarding",
-      "skating",
-      "iceskating",
-      "speedskating",
-      "curling",
-      "motorsport",
-      "formulaone",
-      "motocross",
-      "rally",
-      "horsebackriding",
-      "equestrian",
-      "polo",
-      "bowling",
-      "billiards",
-      "snooker",
-      "darts",
-      "chess",
-      "esports",
-      "tournament",
-      "league",
-      "playoffs",
-      "championship",
-      "stadium",
-      "arena",
-      "coach",
-      "captain",
-      "referee",
-      "umpire",
-      "athlete",
-      "medal",
-      "trophy",
-      "record",
-      "victory",
-      "defeat",
-      "competition",
-      "training",
-      "fitness",
-      "endurance",
-      "strength",
-      "agility",
-      "teamwork",
-      "strategy",
-      "sportsmanship"
-    ],
-    "Music": [
-      "music",
-      "song",
-      "album",
-      "single",
-      "melody",
-      "harmony",
-      "rhythm",
-      "tempo",
-      "pitch",
-      "beat",
-      "chord",
-      "scale",
-      "note",
-      "octave",
-      "lyrics",
-      "verse",
-      "chorus",
-      "bridge",
-      "hook",
-      "refrain",
-      "guitar",
-      "bass",
-      "piano",
-      "keyboard",
-      "drums",
-      "violin",
-      "cello",
-      "viola",
-      "harp",
-      "flute",
-      "clarinet",
-      "oboe",
-      "saxophone",
-      "trumpet",
-      "trombone",
-      "tuba",
-      "frenchhorn",
-      "banjo",
-      "ukulele",
-      "mandolin",
-      "synthesizer",
-      "microphone",
-      "speaker",
-      "amplifier",
-      "mixer",
-      "equalizer",
-      "studio",
-      "recording",
-      "producer",
-      "composer",
-      "conductor",
-      "arranger",
-      "performer",
-      "vocalist",
-      "singer",
-      "band",
-      "orchestra",
-      "ensemble",
-      "choir",
-      "quartet",
-      "duet",
-      "solo",
-      "concert",
-      "festival",
-      "gig",
-      "tour",
-      "playlist",
-      "streaming",
-      "vinyl",
-      "cassette",
-      "compactdisc",
-      "genre",
-      "rock",
-      "metal",
-      "jazz",
-      "blues",
-      "classical",
-      "opera",
-      "pop",
-      "hiphop",
-      "rap",
-      "country",
-      "folk",
-      "electronic",
-      "house",
-      "techno",
-      "trance",
-      "dubstep",
-      "reggae",
-      "soul",
-      "funk",
-      "disco",
-      "soundtrack",
-      "improvisation",
-      "acoustic",
-      "symphony",
-      "concerto",
-      "sonata",
-      "ballad"
-    ]
-  }
+  "Technology": [
+    {
+      "word": "computer",
+      "hint": "Electronic machine used to process information"
+    },
+    {
+      "word": "laptop",
+      "hint": "Portable computer used on the go"
+    },
+    {
+      "word": "desktop",
+      "hint": "Computer designed to stay on a desk"
+    },
+    {
+      "word": "keyboard",
+      "hint": "Input device with keys for typing"
+    },
+    {
+      "word": "mouse",
+      "hint": "Handheld pointing device for a computer"
+    },
+    {
+      "word": "monitor",
+      "hint": "Screen that displays computer output"
+    },
+    {
+      "word": "printer",
+      "hint": "Device that puts digital documents on paper"
+    },
+    {
+      "word": "scanner",
+      "hint": "Device that converts paper documents into digital form"
+    },
+    {
+      "word": "webcam",
+      "hint": "Camera commonly used for video calls"
+    },
+    {
+      "word": "microphone",
+      "hint": "Device used to capture sound"
+    },
+    {
+      "word": "speaker",
+      "hint": "Technology term beginning with 'S' and containing 7 letters"
+    },
+    {
+      "word": "headphones",
+      "hint": "Technology term beginning with 'H' and containing 10 letters"
+    },
+    {
+      "word": "smartphone",
+      "hint": "Technology term beginning with 'S' and containing 10 letters"
+    },
+    {
+      "word": "tablet",
+      "hint": "Technology term beginning with 'T' and containing 6 letters"
+    },
+    {
+      "word": "smartwatch",
+      "hint": "Technology term beginning with 'S' and containing 10 letters (smartwatch)"
+    },
+    {
+      "word": "server",
+      "hint": "Technology term beginning with 'S' and containing 6 letters"
+    },
+    {
+      "word": "router",
+      "hint": "Technology term beginning with 'R' and containing 6 letters"
+    },
+    {
+      "word": "switch",
+      "hint": "Technology term beginning with 'S' and containing 6 letters (switch)"
+    },
+    {
+      "word": "firewall",
+      "hint": "Technology term beginning with 'F' and containing 8 letters"
+    },
+    {
+      "word": "modem",
+      "hint": "Technology term beginning with 'M' and containing 5 letters"
+    },
+    {
+      "word": "database",
+      "hint": "Technology term beginning with 'D' and containing 8 letters"
+    },
+    {
+      "word": "cloud",
+      "hint": "Technology term beginning with 'C' and containing 5 letters"
+    },
+    {
+      "word": "software",
+      "hint": "Technology term beginning with 'S' and containing 8 letters"
+    },
+    {
+      "word": "hardware",
+      "hint": "Technology term beginning with 'H' and containing 8 letters"
+    },
+    {
+      "word": "firmware",
+      "hint": "Technology term beginning with 'F' and containing 8 letters (firmware)"
+    },
+    {
+      "word": "application",
+      "hint": "Technology term beginning with 'A' and containing 11 letters"
+    },
+    {
+      "word": "platform",
+      "hint": "Technology term beginning with 'P' and containing 8 letters"
+    },
+    {
+      "word": "framework",
+      "hint": "Technology term beginning with 'F' and containing 9 letters"
+    },
+    {
+      "word": "library",
+      "hint": "Technology term beginning with 'L' and containing 7 letters"
+    },
+    {
+      "word": "api",
+      "hint": "Technology term beginning with 'A' and containing 3 letters"
+    },
+    {
+      "word": "algorithm",
+      "hint": "Technology term beginning with 'A' and containing 9 letters"
+    },
+    {
+      "word": "compiler",
+      "hint": "Technology term beginning with 'C' and containing 8 letters"
+    },
+    {
+      "word": "debugger",
+      "hint": "Technology term beginning with 'D' and containing 8 letters (debugger)"
+    },
+    {
+      "word": "repository",
+      "hint": "Technology term beginning with 'R' and containing 10 letters"
+    },
+    {
+      "word": "git",
+      "hint": "Technology term beginning with 'G' and containing 3 letters"
+    },
+    {
+      "word": "docker",
+      "hint": "Technology term beginning with 'D' and containing 6 letters"
+    },
+    {
+      "word": "kubernetes",
+      "hint": "Technology term beginning with 'K' and containing 10 letters"
+    },
+    {
+      "word": "container",
+      "hint": "Technology term beginning with 'C' and containing 9 letters"
+    },
+    {
+      "word": "virtualization",
+      "hint": "Technology term beginning with 'V' and containing 14 letters"
+    },
+    {
+      "word": "encryption",
+      "hint": "Technology term beginning with 'E' and containing 10 letters"
+    },
+    {
+      "word": "cybersecurity",
+      "hint": "Technology term beginning with 'C' and containing 13 letters"
+    },
+    {
+      "word": "authentication",
+      "hint": "Technology term beginning with 'A' and containing 14 letters"
+    },
+    {
+      "word": "authorization",
+      "hint": "Technology term beginning with 'A' and containing 13 letters"
+    },
+    {
+      "word": "blockchain",
+      "hint": "Technology term beginning with 'B' and containing 10 letters"
+    },
+    {
+      "word": "cryptography",
+      "hint": "Technology term beginning with 'C' and containing 12 letters"
+    },
+    {
+      "word": "artificialintelligence",
+      "hint": "Technology term beginning with 'A' and containing 22 letters"
+    },
+    {
+      "word": "machinelearning",
+      "hint": "Technology term beginning with 'M' and containing 15 letters"
+    },
+    {
+      "word": "neuralnetwork",
+      "hint": "Technology term beginning with 'N' and containing 13 letters"
+    },
+    {
+      "word": "datascience",
+      "hint": "Technology term beginning with 'D' and containing 11 letters"
+    },
+    {
+      "word": "analytics",
+      "hint": "Technology term beginning with 'A' and containing 9 letters (analytics)"
+    },
+    {
+      "word": "automation",
+      "hint": "Technology term beginning with 'A' and containing 10 letters"
+    },
+    {
+      "word": "robotics",
+      "hint": "Technology term beginning with 'R' and containing 8 letters"
+    },
+    {
+      "word": "sensor",
+      "hint": "Technology term beginning with 'S' and containing 6 letters (sensor)"
+    },
+    {
+      "word": "actuator",
+      "hint": "Technology term beginning with 'A' and containing 8 letters"
+    },
+    {
+      "word": "drone",
+      "hint": "Technology term beginning with 'D' and containing 5 letters"
+    },
+    {
+      "word": "satellite",
+      "hint": "Technology term beginning with 'S' and containing 9 letters"
+    },
+    {
+      "word": "processor",
+      "hint": "Technology term beginning with 'P' and containing 9 letters"
+    },
+    {
+      "word": "cpu",
+      "hint": "Technology term beginning with 'C' and containing 3 letters"
+    },
+    {
+      "word": "gpu",
+      "hint": "Technology term beginning with 'G' and containing 3 letters (gpu)"
+    },
+    {
+      "word": "memory",
+      "hint": "Technology term beginning with 'M' and containing 6 letters"
+    },
+    {
+      "word": "ram",
+      "hint": "Technology term beginning with 'R' and containing 3 letters"
+    },
+    {
+      "word": "ssd",
+      "hint": "Technology term beginning with 'S' and containing 3 letters"
+    },
+    {
+      "word": "harddrive",
+      "hint": "Technology term beginning with 'H' and containing 9 letters"
+    },
+    {
+      "word": "network",
+      "hint": "Technology term beginning with 'N' and containing 7 letters"
+    },
+    {
+      "word": "bandwidth",
+      "hint": "Technology term beginning with 'B' and containing 9 letters"
+    },
+    {
+      "word": "protocol",
+      "hint": "Technology term beginning with 'P' and containing 8 letters (protocol)"
+    },
+    {
+      "word": "tcp",
+      "hint": "Technology term beginning with 'T' and containing 3 letters"
+    },
+    {
+      "word": "udp",
+      "hint": "Technology term beginning with 'U' and containing 3 letters"
+    },
+    {
+      "word": "http",
+      "hint": "Technology term beginning with 'H' and containing 4 letters"
+    },
+    {
+      "word": "https",
+      "hint": "Technology term beginning with 'H' and containing 5 letters"
+    },
+    {
+      "word": "dns",
+      "hint": "Technology term beginning with 'D' and containing 3 letters"
+    },
+    {
+      "word": "domain",
+      "hint": "Technology term beginning with 'D' and containing 6 letters (domain)"
+    },
+    {
+      "word": "hosting",
+      "hint": "Technology term beginning with 'H' and containing 7 letters"
+    },
+    {
+      "word": "backend",
+      "hint": "Technology term beginning with 'B' and containing 7 letters"
+    },
+    {
+      "word": "frontend",
+      "hint": "Technology term beginning with 'F' and containing 8 letters (frontend)"
+    },
+    {
+      "word": "fullstack",
+      "hint": "Technology term beginning with 'F' and containing 9 letters (fullstack)"
+    },
+    {
+      "word": "javascript",
+      "hint": "Technology term beginning with 'J' and containing 10 letters"
+    },
+    {
+      "word": "typescript",
+      "hint": "Technology term beginning with 'T' and containing 10 letters"
+    },
+    {
+      "word": "python",
+      "hint": "Technology term beginning with 'P' and containing 6 letters"
+    },
+    {
+      "word": "csharp",
+      "hint": "Technology term beginning with 'C' and containing 6 letters"
+    },
+    {
+      "word": "java",
+      "hint": "Technology term beginning with 'J' and containing 4 letters"
+    },
+    {
+      "word": "golang",
+      "hint": "Technology term beginning with 'G' and containing 6 letters"
+    },
+    {
+      "word": "rust",
+      "hint": "Technology term beginning with 'R' and containing 4 letters"
+    },
+    {
+      "word": "php",
+      "hint": "Technology term beginning with 'P' and containing 3 letters"
+    },
+    {
+      "word": "ruby",
+      "hint": "Technology term beginning with 'R' and containing 4 letters (ruby)"
+    },
+    {
+      "word": "linux",
+      "hint": "Technology term beginning with 'L' and containing 5 letters"
+    },
+    {
+      "word": "windows",
+      "hint": "Technology term beginning with 'W' and containing 7 letters"
+    },
+    {
+      "word": "android",
+      "hint": "Technology term beginning with 'A' and containing 7 letters"
+    },
+    {
+      "word": "ios",
+      "hint": "Technology term beginning with 'I' and containing 3 letters"
+    },
+    {
+      "word": "macos",
+      "hint": "Technology term beginning with 'M' and containing 5 letters (macos)"
+    },
+    {
+      "word": "ubuntu",
+      "hint": "Technology term beginning with 'U' and containing 6 letters"
+    },
+    {
+      "word": "debian",
+      "hint": "Technology term beginning with 'D' and containing 6 letters (debian)"
+    },
+    {
+      "word": "archlinux",
+      "hint": "Technology term beginning with 'A' and containing 9 letters (archlinux)"
+    },
+    {
+      "word": "terminal",
+      "hint": "Technology term beginning with 'T' and containing 8 letters"
+    },
+    {
+      "word": "shell",
+      "hint": "Technology term beginning with 'S' and containing 5 letters"
+    },
+    {
+      "word": "script",
+      "hint": "Technology term beginning with 'S' and containing 6 letters (script)"
+    },
+    {
+      "word": "microservice",
+      "hint": "Technology term beginning with 'M' and containing 12 letters"
+    },
+    {
+      "word": "datacenter",
+      "hint": "Technology term beginning with 'D' and containing 10 letters"
+    },
+    {
+      "word": "edgecomputing",
+      "hint": "Technology term beginning with 'E' and containing 13 letters"
+    },
+    {
+      "word": "quantumcomputing",
+      "hint": "Technology term beginning with 'Q' and containing 16 letters"
+    }
+  ],
+  "Travel": [
+    {
+      "word": "airport",
+      "hint": "Travel term beginning with 'A' and containing 7 letters"
+    },
+    {
+      "word": "airplane",
+      "hint": "Travel term beginning with 'A' and containing 8 letters"
+    },
+    {
+      "word": "passport",
+      "hint": "Travel term beginning with 'P' and containing 8 letters"
+    },
+    {
+      "word": "visa",
+      "hint": "Travel term beginning with 'V' and containing 4 letters"
+    },
+    {
+      "word": "ticket",
+      "hint": "Travel term beginning with 'T' and containing 6 letters"
+    },
+    {
+      "word": "boardingpass",
+      "hint": "Travel term beginning with 'B' and containing 12 letters"
+    },
+    {
+      "word": "hotel",
+      "hint": "Travel term beginning with 'H' and containing 5 letters"
+    },
+    {
+      "word": "hostel",
+      "hint": "Travel term beginning with 'H' and containing 6 letters"
+    },
+    {
+      "word": "resort",
+      "hint": "Travel term beginning with 'R' and containing 6 letters"
+    },
+    {
+      "word": "motel",
+      "hint": "Travel term beginning with 'M' and containing 5 letters"
+    },
+    {
+      "word": "villa",
+      "hint": "Travel term beginning with 'V' and containing 5 letters"
+    },
+    {
+      "word": "apartment",
+      "hint": "Travel term beginning with 'A' and containing 9 letters"
+    },
+    {
+      "word": "backpack",
+      "hint": "Travel term beginning with 'B' and containing 8 letters"
+    },
+    {
+      "word": "suitcase",
+      "hint": "Travel term beginning with 'S' and containing 8 letters"
+    },
+    {
+      "word": "luggage",
+      "hint": "Travel term beginning with 'L' and containing 7 letters"
+    },
+    {
+      "word": "journey",
+      "hint": "Travel term beginning with 'J' and containing 7 letters"
+    },
+    {
+      "word": "trip",
+      "hint": "Travel term beginning with 'T' and containing 4 letters"
+    },
+    {
+      "word": "vacation",
+      "hint": "Travel term beginning with 'V' and containing 8 letters"
+    },
+    {
+      "word": "holiday",
+      "hint": "Travel term beginning with 'H' and containing 7 letters"
+    },
+    {
+      "word": "adventure",
+      "hint": "Travel term beginning with 'A' and containing 9 letters (adventure)"
+    },
+    {
+      "word": "tour",
+      "hint": "Travel term beginning with 'T' and containing 4 letters (tour)"
+    },
+    {
+      "word": "excursion",
+      "hint": "Travel term beginning with 'E' and containing 9 letters"
+    },
+    {
+      "word": "expedition",
+      "hint": "Travel term beginning with 'E' and containing 10 letters"
+    },
+    {
+      "word": "cruise",
+      "hint": "Travel term beginning with 'C' and containing 6 letters"
+    },
+    {
+      "word": "train",
+      "hint": "Travel term beginning with 'T' and containing 5 letters"
+    },
+    {
+      "word": "station",
+      "hint": "Travel term beginning with 'S' and containing 7 letters"
+    },
+    {
+      "word": "bus",
+      "hint": "Travel term beginning with 'B' and containing 3 letters"
+    },
+    {
+      "word": "taxi",
+      "hint": "Travel term beginning with 'T' and containing 4 letters (taxi)"
+    },
+    {
+      "word": "subway",
+      "hint": "Travel term beginning with 'S' and containing 6 letters"
+    },
+    {
+      "word": "tram",
+      "hint": "Travel term beginning with 'T' and containing 4 letters (tram)"
+    },
+    {
+      "word": "ferry",
+      "hint": "Travel term beginning with 'F' and containing 5 letters"
+    },
+    {
+      "word": "rentalcar",
+      "hint": "Travel term beginning with 'R' and containing 9 letters"
+    },
+    {
+      "word": "roadtrip",
+      "hint": "Travel term beginning with 'R' and containing 8 letters"
+    },
+    {
+      "word": "highway",
+      "hint": "Travel term beginning with 'H' and containing 7 letters (highway)"
+    },
+    {
+      "word": "itinerary",
+      "hint": "Travel term beginning with 'I' and containing 9 letters"
+    },
+    {
+      "word": "reservation",
+      "hint": "Travel term beginning with 'R' and containing 11 letters"
+    },
+    {
+      "word": "accommodation",
+      "hint": "Travel term beginning with 'A' and containing 13 letters"
+    },
+    {
+      "word": "checkin",
+      "hint": "Travel term beginning with 'C' and containing 7 letters"
+    },
+    {
+      "word": "checkout",
+      "hint": "Travel term beginning with 'C' and containing 8 letters"
+    },
+    {
+      "word": "customs",
+      "hint": "Travel term beginning with 'C' and containing 7 letters (customs)"
+    },
+    {
+      "word": "immigration",
+      "hint": "Travel term beginning with 'I' and containing 11 letters"
+    },
+    {
+      "word": "departure",
+      "hint": "Travel term beginning with 'D' and containing 9 letters"
+    },
+    {
+      "word": "arrival",
+      "hint": "Travel term beginning with 'A' and containing 7 letters (arrival)"
+    },
+    {
+      "word": "terminal",
+      "hint": "Travel term beginning with 'T' and containing 8 letters"
+    },
+    {
+      "word": "gate",
+      "hint": "Travel term beginning with 'G' and containing 4 letters"
+    },
+    {
+      "word": "runway",
+      "hint": "Travel term beginning with 'R' and containing 6 letters (runway)"
+    },
+    {
+      "word": "pilot",
+      "hint": "Travel term beginning with 'P' and containing 5 letters"
+    },
+    {
+      "word": "captain",
+      "hint": "Travel term beginning with 'C' and containing 7 letters (captain)"
+    },
+    {
+      "word": "guide",
+      "hint": "Travel term beginning with 'G' and containing 5 letters"
+    },
+    {
+      "word": "tourist",
+      "hint": "Travel term beginning with 'T' and containing 7 letters"
+    },
+    {
+      "word": "traveler",
+      "hint": "Travel term beginning with 'T' and containing 8 letters (traveler)"
+    },
+    {
+      "word": "landmark",
+      "hint": "Travel term beginning with 'L' and containing 8 letters"
+    },
+    {
+      "word": "monument",
+      "hint": "Travel term beginning with 'M' and containing 8 letters"
+    },
+    {
+      "word": "museum",
+      "hint": "Travel term beginning with 'M' and containing 6 letters"
+    },
+    {
+      "word": "gallery",
+      "hint": "Travel term beginning with 'G' and containing 7 letters"
+    },
+    {
+      "word": "castle",
+      "hint": "Travel term beginning with 'C' and containing 6 letters (castle)"
+    },
+    {
+      "word": "palace",
+      "hint": "Travel term beginning with 'P' and containing 6 letters"
+    },
+    {
+      "word": "cathedral",
+      "hint": "Travel term beginning with 'C' and containing 9 letters"
+    },
+    {
+      "word": "temple",
+      "hint": "Travel term beginning with 'T' and containing 6 letters (temple)"
+    },
+    {
+      "word": "mosque",
+      "hint": "Travel term beginning with 'M' and containing 6 letters (mosque)"
+    },
+    {
+      "word": "beach",
+      "hint": "Travel term beginning with 'B' and containing 5 letters"
+    },
+    {
+      "word": "island",
+      "hint": "Travel term beginning with 'I' and containing 6 letters"
+    },
+    {
+      "word": "mountain",
+      "hint": "Travel term beginning with 'M' and containing 8 letters (mountain)"
+    },
+    {
+      "word": "forest",
+      "hint": "Travel term beginning with 'F' and containing 6 letters"
+    },
+    {
+      "word": "desert",
+      "hint": "Travel term beginning with 'D' and containing 6 letters"
+    },
+    {
+      "word": "waterfall",
+      "hint": "Travel term beginning with 'W' and containing 9 letters"
+    },
+    {
+      "word": "canyon",
+      "hint": "Travel term beginning with 'C' and containing 6 letters (canyon)"
+    },
+    {
+      "word": "valley",
+      "hint": "Travel term beginning with 'V' and containing 6 letters"
+    },
+    {
+      "word": "lake",
+      "hint": "Travel term beginning with 'L' and containing 4 letters"
+    },
+    {
+      "word": "river",
+      "hint": "Travel term beginning with 'R' and containing 5 letters"
+    },
+    {
+      "word": "village",
+      "hint": "Travel term beginning with 'V' and containing 7 letters"
+    },
+    {
+      "word": "town",
+      "hint": "Travel term beginning with 'T' and containing 4 letters (town)"
+    },
+    {
+      "word": "city",
+      "hint": "Travel term beginning with 'C' and containing 4 letters"
+    },
+    {
+      "word": "country",
+      "hint": "Travel term beginning with 'C' and containing 7 letters (country)"
+    },
+    {
+      "word": "continent",
+      "hint": "Travel term beginning with 'C' and containing 9 letters (continent)"
+    },
+    {
+      "word": "navigation",
+      "hint": "Travel term beginning with 'N' and containing 10 letters"
+    },
+    {
+      "word": "map",
+      "hint": "Travel term beginning with 'M' and containing 3 letters"
+    },
+    {
+      "word": "compass",
+      "hint": "Travel term beginning with 'C' and containing 7 letters (compass)"
+    },
+    {
+      "word": "guidebook",
+      "hint": "Travel term beginning with 'G' and containing 9 letters"
+    },
+    {
+      "word": "souvenir",
+      "hint": "Travel term beginning with 'S' and containing 8 letters (souvenir)"
+    },
+    {
+      "word": "photography",
+      "hint": "Travel term beginning with 'P' and containing 11 letters"
+    },
+    {
+      "word": "camping",
+      "hint": "Travel term beginning with 'C' and containing 7 letters (camping)"
+    },
+    {
+      "word": "hiking",
+      "hint": "Travel term beginning with 'H' and containing 6 letters (hiking)"
+    },
+    {
+      "word": "trekking",
+      "hint": "Travel term beginning with 'T' and containing 8 letters (trekking)"
+    },
+    {
+      "word": "backpacking",
+      "hint": "Travel term beginning with 'B' and containing 11 letters"
+    },
+    {
+      "word": "sightseeing",
+      "hint": "Travel term beginning with 'S' and containing 11 letters"
+    },
+    {
+      "word": "adrenaline",
+      "hint": "Travel term beginning with 'A' and containing 10 letters"
+    },
+    {
+      "word": "culture",
+      "hint": "Travel term beginning with 'C' and containing 7 letters (culture)"
+    },
+    {
+      "word": "heritage",
+      "hint": "Travel term beginning with 'H' and containing 8 letters"
+    },
+    {
+      "word": "festival",
+      "hint": "Travel term beginning with 'F' and containing 8 letters"
+    },
+    {
+      "word": "cuisine",
+      "hint": "Travel term beginning with 'C' and containing 7 letters (cuisine)"
+    },
+    {
+      "word": "exploration",
+      "hint": "Travel term beginning with 'E' and containing 11 letters"
+    },
+    {
+      "word": "border",
+      "hint": "Travel term beginning with 'B' and containing 6 letters"
+    },
+    {
+      "word": "timezone",
+      "hint": "Travel term beginning with 'T' and containing 8 letters (timezone)"
+    },
+    {
+      "word": "travelinsurance",
+      "hint": "Travel term beginning with 'T' and containing 15 letters"
+    },
+    {
+      "word": "currencyexchange",
+      "hint": "Travel term beginning with 'C' and containing 16 letters"
+    },
+    {
+      "word": "adventuretour",
+      "hint": "Travel term beginning with 'A' and containing 13 letters (adventuretour)"
+    },
+    {
+      "word": "ecotourism",
+      "hint": "Travel term beginning with 'E' and containing 10 letters (ecotourism)"
+    },
+    {
+      "word": "staycation",
+      "hint": "Travel term beginning with 'S' and containing 10 letters"
+    }
+  ],
+  "Food": [
+    {
+      "word": "pizza",
+      "hint": "Popular Italian dish with a baked crust"
+    },
+    {
+      "word": "burger",
+      "hint": "Sandwich usually served with a patty"
+    },
+    {
+      "word": "sandwich",
+      "hint": "Food term beginning with 'S' and containing 8 letters"
+    },
+    {
+      "word": "pasta",
+      "hint": "Food term beginning with 'P' and containing 5 letters"
+    },
+    {
+      "word": "spaghetti",
+      "hint": "Food term beginning with 'S' and containing 9 letters"
+    },
+    {
+      "word": "lasagna",
+      "hint": "Food term beginning with 'L' and containing 7 letters"
+    },
+    {
+      "word": "ravioli",
+      "hint": "Food term beginning with 'R' and containing 7 letters"
+    },
+    {
+      "word": "salad",
+      "hint": "Food term beginning with 'S' and containing 5 letters"
+    },
+    {
+      "word": "soup",
+      "hint": "Food term beginning with 'S' and containing 4 letters"
+    },
+    {
+      "word": "stew",
+      "hint": "Food term beginning with 'S' and containing 4 letters (stew)"
+    },
+    {
+      "word": "chicken",
+      "hint": "Food term beginning with 'C' and containing 7 letters"
+    },
+    {
+      "word": "beef",
+      "hint": "Food term beginning with 'B' and containing 4 letters"
+    },
+    {
+      "word": "pork",
+      "hint": "Food term beginning with 'P' and containing 4 letters"
+    },
+    {
+      "word": "lamb",
+      "hint": "Food term beginning with 'L' and containing 4 letters"
+    },
+    {
+      "word": "turkey",
+      "hint": "Food term beginning with 'T' and containing 6 letters"
+    },
+    {
+      "word": "duck",
+      "hint": "Food term beginning with 'D' and containing 4 letters"
+    },
+    {
+      "word": "fish",
+      "hint": "Food term beginning with 'F' and containing 4 letters"
+    },
+    {
+      "word": "salmon",
+      "hint": "Food term beginning with 'S' and containing 6 letters"
+    },
+    {
+      "word": "tuna",
+      "hint": "Food term beginning with 'T' and containing 4 letters"
+    },
+    {
+      "word": "shrimp",
+      "hint": "Food term beginning with 'S' and containing 6 letters (shrimp)"
+    },
+    {
+      "word": "crab",
+      "hint": "Food term beginning with 'C' and containing 4 letters"
+    },
+    {
+      "word": "lobster",
+      "hint": "Food term beginning with 'L' and containing 7 letters (lobster)"
+    },
+    {
+      "word": "rice",
+      "hint": "Food term beginning with 'R' and containing 4 letters"
+    },
+    {
+      "word": "bread",
+      "hint": "Food term beginning with 'B' and containing 5 letters"
+    },
+    {
+      "word": "bagel",
+      "hint": "Food term beginning with 'B' and containing 5 letters (bagel)"
+    },
+    {
+      "word": "croissant",
+      "hint": "Food term beginning with 'C' and containing 9 letters"
+    },
+    {
+      "word": "toast",
+      "hint": "Food term beginning with 'T' and containing 5 letters"
+    },
+    {
+      "word": "butter",
+      "hint": "Food term beginning with 'B' and containing 6 letters"
+    },
+    {
+      "word": "cheese",
+      "hint": "Food term beginning with 'C' and containing 6 letters"
+    },
+    {
+      "word": "milk",
+      "hint": "Food term beginning with 'M' and containing 4 letters"
+    },
+    {
+      "word": "yogurt",
+      "hint": "Food term beginning with 'Y' and containing 6 letters"
+    },
+    {
+      "word": "cream",
+      "hint": "Food term beginning with 'C' and containing 5 letters"
+    },
+    {
+      "word": "egg",
+      "hint": "Food term beginning with 'E' and containing 3 letters"
+    },
+    {
+      "word": "bacon",
+      "hint": "Food term beginning with 'B' and containing 5 letters (bacon)"
+    },
+    {
+      "word": "sausage",
+      "hint": "Food term beginning with 'S' and containing 7 letters"
+    },
+    {
+      "word": "omelet",
+      "hint": "Food term beginning with 'O' and containing 6 letters"
+    },
+    {
+      "word": "pancake",
+      "hint": "Food term beginning with 'P' and containing 7 letters"
+    },
+    {
+      "word": "waffle",
+      "hint": "Food term beginning with 'W' and containing 6 letters"
+    },
+    {
+      "word": "cereal",
+      "hint": "Food term beginning with 'C' and containing 6 letters (cereal)"
+    },
+    {
+      "word": "oatmeal",
+      "hint": "Food term beginning with 'O' and containing 7 letters"
+    },
+    {
+      "word": "apple",
+      "hint": "Food term beginning with 'A' and containing 5 letters"
+    },
+    {
+      "word": "banana",
+      "hint": "Food term beginning with 'B' and containing 6 letters (banana)"
+    },
+    {
+      "word": "orange",
+      "hint": "Food term beginning with 'O' and containing 6 letters (orange)"
+    },
+    {
+      "word": "grape",
+      "hint": "Food term beginning with 'G' and containing 5 letters"
+    },
+    {
+      "word": "pear",
+      "hint": "Food term beginning with 'P' and containing 4 letters (pear)"
+    },
+    {
+      "word": "peach",
+      "hint": "Food term beginning with 'P' and containing 5 letters (peach)"
+    },
+    {
+      "word": "plum",
+      "hint": "Food term beginning with 'P' and containing 4 letters (plum)"
+    },
+    {
+      "word": "mango",
+      "hint": "Food term beginning with 'M' and containing 5 letters"
+    },
+    {
+      "word": "pineapple",
+      "hint": "Food term beginning with 'P' and containing 9 letters"
+    },
+    {
+      "word": "watermelon",
+      "hint": "Food term beginning with 'W' and containing 10 letters"
+    },
+    {
+      "word": "strawberry",
+      "hint": "Food term beginning with 'S' and containing 10 letters"
+    },
+    {
+      "word": "blueberry",
+      "hint": "Food term beginning with 'B' and containing 9 letters"
+    },
+    {
+      "word": "raspberry",
+      "hint": "Food term beginning with 'R' and containing 9 letters"
+    },
+    {
+      "word": "blackberry",
+      "hint": "Food term beginning with 'B' and containing 10 letters"
+    },
+    {
+      "word": "potato",
+      "hint": "Food term beginning with 'P' and containing 6 letters"
+    },
+    {
+      "word": "tomato",
+      "hint": "Food term beginning with 'T' and containing 6 letters (tomato)"
+    },
+    {
+      "word": "onion",
+      "hint": "Food term beginning with 'O' and containing 5 letters"
+    },
+    {
+      "word": "garlic",
+      "hint": "Food term beginning with 'G' and containing 6 letters"
+    },
+    {
+      "word": "carrot",
+      "hint": "Food term beginning with 'C' and containing 6 letters (carrot)"
+    },
+    {
+      "word": "broccoli",
+      "hint": "Food term beginning with 'B' and containing 8 letters"
+    },
+    {
+      "word": "spinach",
+      "hint": "Food term beginning with 'S' and containing 7 letters (spinach)"
+    },
+    {
+      "word": "lettuce",
+      "hint": "Food term beginning with 'L' and containing 7 letters (lettuce)"
+    },
+    {
+      "word": "cucumber",
+      "hint": "Food term beginning with 'C' and containing 8 letters"
+    },
+    {
+      "word": "pepper",
+      "hint": "Food term beginning with 'P' and containing 6 letters (pepper)"
+    },
+    {
+      "word": "mushroom",
+      "hint": "Food term beginning with 'M' and containing 8 letters"
+    },
+    {
+      "word": "zucchini",
+      "hint": "Food term beginning with 'Z' and containing 8 letters"
+    },
+    {
+      "word": "eggplant",
+      "hint": "Food term beginning with 'E' and containing 8 letters"
+    },
+    {
+      "word": "avocado",
+      "hint": "Food term beginning with 'A' and containing 7 letters"
+    },
+    {
+      "word": "corn",
+      "hint": "Food term beginning with 'C' and containing 4 letters (corn)"
+    },
+    {
+      "word": "beans",
+      "hint": "Food term beginning with 'B' and containing 5 letters (beans)"
+    },
+    {
+      "word": "lentils",
+      "hint": "Food term beginning with 'L' and containing 7 letters (lentils)"
+    },
+    {
+      "word": "chickpeas",
+      "hint": "Food term beginning with 'C' and containing 9 letters (chickpeas)"
+    },
+    {
+      "word": "coffee",
+      "hint": "Food term beginning with 'C' and containing 6 letters (coffee)"
+    },
+    {
+      "word": "tea",
+      "hint": "Food term beginning with 'T' and containing 3 letters"
+    },
+    {
+      "word": "juice",
+      "hint": "Food term beginning with 'J' and containing 5 letters"
+    },
+    {
+      "word": "smoothie",
+      "hint": "Food term beginning with 'S' and containing 8 letters (smoothie)"
+    },
+    {
+      "word": "soda",
+      "hint": "Food term beginning with 'S' and containing 4 letters (soda)"
+    },
+    {
+      "word": "water",
+      "hint": "Food term beginning with 'W' and containing 5 letters"
+    },
+    {
+      "word": "cake",
+      "hint": "Food term beginning with 'C' and containing 4 letters (cake)"
+    },
+    {
+      "word": "cookie",
+      "hint": "Food term beginning with 'C' and containing 6 letters (cookie)"
+    },
+    {
+      "word": "brownie",
+      "hint": "Food term beginning with 'B' and containing 7 letters"
+    },
+    {
+      "word": "muffin",
+      "hint": "Food term beginning with 'M' and containing 6 letters"
+    },
+    {
+      "word": "donut",
+      "hint": "Food term beginning with 'D' and containing 5 letters"
+    },
+    {
+      "word": "chocolate",
+      "hint": "Food term beginning with 'C' and containing 9 letters (chocolate)"
+    },
+    {
+      "word": "icecream",
+      "hint": "Food term beginning with 'I' and containing 8 letters"
+    },
+    {
+      "word": "candy",
+      "hint": "Food term beginning with 'C' and containing 5 letters (candy)"
+    },
+    {
+      "word": "sushi",
+      "hint": "Food term beginning with 'S' and containing 5 letters (sushi)"
+    },
+    {
+      "word": "taco",
+      "hint": "Food term beginning with 'T' and containing 4 letters (taco)"
+    },
+    {
+      "word": "burrito",
+      "hint": "Food term beginning with 'B' and containing 7 letters (burrito)"
+    },
+    {
+      "word": "quesadilla",
+      "hint": "Food term beginning with 'Q' and containing 10 letters"
+    },
+    {
+      "word": "dumpling",
+      "hint": "Food term beginning with 'D' and containing 8 letters"
+    },
+    {
+      "word": "curry",
+      "hint": "Food term beginning with 'C' and containing 5 letters (curry)"
+    },
+    {
+      "word": "noodles",
+      "hint": "Food term beginning with 'N' and containing 7 letters"
+    },
+    {
+      "word": "ramen",
+      "hint": "Food term beginning with 'R' and containing 5 letters"
+    },
+    {
+      "word": "pho",
+      "hint": "Food term beginning with 'P' and containing 3 letters"
+    },
+    {
+      "word": "kimchi",
+      "hint": "Food term beginning with 'K' and containing 6 letters"
+    },
+    {
+      "word": "falafel",
+      "hint": "Food term beginning with 'F' and containing 7 letters"
+    },
+    {
+      "word": "hummus",
+      "hint": "Food term beginning with 'H' and containing 6 letters"
+    },
+    {
+      "word": "paella",
+      "hint": "Food term beginning with 'P' and containing 6 letters (paella)"
+    }
+  ],
+  "Sports": [
+    {
+      "word": "football",
+      "hint": "Team sport played with an oval or round ball depending on region"
+    },
+    {
+      "word": "soccer",
+      "hint": "Sports term beginning with 'S' and containing 6 letters"
+    },
+    {
+      "word": "basketball",
+      "hint": "Sport where players shoot a ball through a hoop"
+    },
+    {
+      "word": "baseball",
+      "hint": "Sports term beginning with 'B' and containing 8 letters"
+    },
+    {
+      "word": "softball",
+      "hint": "Sports term beginning with 'S' and containing 8 letters"
+    },
+    {
+      "word": "tennis",
+      "hint": "Sports term beginning with 'T' and containing 6 letters"
+    },
+    {
+      "word": "golf",
+      "hint": "Sports term beginning with 'G' and containing 4 letters"
+    },
+    {
+      "word": "volleyball",
+      "hint": "Sports term beginning with 'V' and containing 10 letters"
+    },
+    {
+      "word": "cricket",
+      "hint": "Sports term beginning with 'C' and containing 7 letters"
+    },
+    {
+      "word": "rugby",
+      "hint": "Sports term beginning with 'R' and containing 5 letters"
+    },
+    {
+      "word": "hockey",
+      "hint": "Sports term beginning with 'H' and containing 6 letters"
+    },
+    {
+      "word": "badminton",
+      "hint": "Sports term beginning with 'B' and containing 9 letters"
+    },
+    {
+      "word": "squash",
+      "hint": "Sports term beginning with 'S' and containing 6 letters (squash)"
+    },
+    {
+      "word": "tabletennis",
+      "hint": "Sports term beginning with 'T' and containing 11 letters"
+    },
+    {
+      "word": "handball",
+      "hint": "Sports term beginning with 'H' and containing 8 letters"
+    },
+    {
+      "word": "lacrosse",
+      "hint": "Sports term beginning with 'L' and containing 8 letters"
+    },
+    {
+      "word": "swimming",
+      "hint": "Sports term beginning with 'S' and containing 8 letters (swimming)"
+    },
+    {
+      "word": "diving",
+      "hint": "Sports term beginning with 'D' and containing 6 letters"
+    },
+    {
+      "word": "waterpolo",
+      "hint": "Sports term beginning with 'W' and containing 9 letters"
+    },
+    {
+      "word": "surfing",
+      "hint": "Sports term beginning with 'S' and containing 7 letters"
+    },
+    {
+      "word": "rowing",
+      "hint": "Sports term beginning with 'R' and containing 6 letters"
+    },
+    {
+      "word": "canoeing",
+      "hint": "Sports term beginning with 'C' and containing 8 letters"
+    },
+    {
+      "word": "kayaking",
+      "hint": "Sports term beginning with 'K' and containing 8 letters"
+    },
+    {
+      "word": "sailing",
+      "hint": "Sports term beginning with 'S' and containing 7 letters (sailing)"
+    },
+    {
+      "word": "cycling",
+      "hint": "Sports term beginning with 'C' and containing 7 letters (cycling)"
+    },
+    {
+      "word": "bmx",
+      "hint": "Sports term beginning with 'B' and containing 3 letters"
+    },
+    {
+      "word": "running",
+      "hint": "Sports term beginning with 'R' and containing 7 letters"
+    },
+    {
+      "word": "jogging",
+      "hint": "Sports term beginning with 'J' and containing 7 letters"
+    },
+    {
+      "word": "marathon",
+      "hint": "Sports term beginning with 'M' and containing 8 letters"
+    },
+    {
+      "word": "sprint",
+      "hint": "Sports term beginning with 'S' and containing 6 letters (sprint)"
+    },
+    {
+      "word": "triathlon",
+      "hint": "Sports term beginning with 'T' and containing 9 letters"
+    },
+    {
+      "word": "duathlon",
+      "hint": "Sports term beginning with 'D' and containing 8 letters"
+    },
+    {
+      "word": "athletics",
+      "hint": "Sports term beginning with 'A' and containing 9 letters"
+    },
+    {
+      "word": "highjump",
+      "hint": "Sports term beginning with 'H' and containing 8 letters (highjump)"
+    },
+    {
+      "word": "longjump",
+      "hint": "Sports term beginning with 'L' and containing 8 letters (longjump)"
+    },
+    {
+      "word": "polevault",
+      "hint": "Sports term beginning with 'P' and containing 9 letters"
+    },
+    {
+      "word": "shotput",
+      "hint": "Sports term beginning with 'S' and containing 7 letters (shotput)"
+    },
+    {
+      "word": "discus",
+      "hint": "Sports term beginning with 'D' and containing 6 letters (discus)"
+    },
+    {
+      "word": "javelin",
+      "hint": "Sports term beginning with 'J' and containing 7 letters (javelin)"
+    },
+    {
+      "word": "relay",
+      "hint": "Sports term beginning with 'R' and containing 5 letters (relay)"
+    },
+    {
+      "word": "boxing",
+      "hint": "Sports term beginning with 'B' and containing 6 letters"
+    },
+    {
+      "word": "wrestling",
+      "hint": "Sports term beginning with 'W' and containing 9 letters (wrestling)"
+    },
+    {
+      "word": "mma",
+      "hint": "Sports term beginning with 'M' and containing 3 letters"
+    },
+    {
+      "word": "karate",
+      "hint": "Sports term beginning with 'K' and containing 6 letters"
+    },
+    {
+      "word": "judo",
+      "hint": "Sports term beginning with 'J' and containing 4 letters"
+    },
+    {
+      "word": "taekwondo",
+      "hint": "Sports term beginning with 'T' and containing 9 letters (taekwondo)"
+    },
+    {
+      "word": "fencing",
+      "hint": "Sports term beginning with 'F' and containing 7 letters"
+    },
+    {
+      "word": "archery",
+      "hint": "Sports term beginning with 'A' and containing 7 letters"
+    },
+    {
+      "word": "weightlifting",
+      "hint": "Sports term beginning with 'W' and containing 13 letters"
+    },
+    {
+      "word": "powerlifting",
+      "hint": "Sports term beginning with 'P' and containing 12 letters"
+    },
+    {
+      "word": "bodybuilding",
+      "hint": "Sports term beginning with 'B' and containing 12 letters"
+    },
+    {
+      "word": "gymnastics",
+      "hint": "Sports term beginning with 'G' and containing 10 letters"
+    },
+    {
+      "word": "parkour",
+      "hint": "Sports term beginning with 'P' and containing 7 letters"
+    },
+    {
+      "word": "climbing",
+      "hint": "Sports term beginning with 'C' and containing 8 letters (climbing)"
+    },
+    {
+      "word": "bouldering",
+      "hint": "Sports term beginning with 'B' and containing 10 letters"
+    },
+    {
+      "word": "skiing",
+      "hint": "Sports term beginning with 'S' and containing 6 letters (skiing)"
+    },
+    {
+      "word": "snowboarding",
+      "hint": "Sports term beginning with 'S' and containing 12 letters"
+    },
+    {
+      "word": "skating",
+      "hint": "Sports term beginning with 'S' and containing 7 letters (skating)"
+    },
+    {
+      "word": "iceskating",
+      "hint": "Sports term beginning with 'I' and containing 10 letters"
+    },
+    {
+      "word": "speedskating",
+      "hint": "Sports term beginning with 'S' and containing 12 letters (speedskating)"
+    },
+    {
+      "word": "curling",
+      "hint": "Sports term beginning with 'C' and containing 7 letters (curling)"
+    },
+    {
+      "word": "motorsport",
+      "hint": "Sports term beginning with 'M' and containing 10 letters"
+    },
+    {
+      "word": "formulaone",
+      "hint": "Sports term beginning with 'F' and containing 10 letters"
+    },
+    {
+      "word": "motocross",
+      "hint": "Sports term beginning with 'M' and containing 9 letters"
+    },
+    {
+      "word": "rally",
+      "hint": "Sports term beginning with 'R' and containing 5 letters (rally)"
+    },
+    {
+      "word": "horsebackriding",
+      "hint": "Sports term beginning with 'H' and containing 15 letters"
+    },
+    {
+      "word": "equestrian",
+      "hint": "Sports term beginning with 'E' and containing 10 letters"
+    },
+    {
+      "word": "polo",
+      "hint": "Sports term beginning with 'P' and containing 4 letters"
+    },
+    {
+      "word": "bowling",
+      "hint": "Sports term beginning with 'B' and containing 7 letters"
+    },
+    {
+      "word": "billiards",
+      "hint": "Sports term beginning with 'B' and containing 9 letters (billiards)"
+    },
+    {
+      "word": "snooker",
+      "hint": "Sports term beginning with 'S' and containing 7 letters (snooker)"
+    },
+    {
+      "word": "darts",
+      "hint": "Sports term beginning with 'D' and containing 5 letters"
+    },
+    {
+      "word": "chess",
+      "hint": "Sports term beginning with 'C' and containing 5 letters"
+    },
+    {
+      "word": "esports",
+      "hint": "Sports term beginning with 'E' and containing 7 letters"
+    },
+    {
+      "word": "tournament",
+      "hint": "Sports term beginning with 'T' and containing 10 letters"
+    },
+    {
+      "word": "league",
+      "hint": "Sports term beginning with 'L' and containing 6 letters"
+    },
+    {
+      "word": "playoffs",
+      "hint": "Sports term beginning with 'P' and containing 8 letters"
+    },
+    {
+      "word": "championship",
+      "hint": "Sports term beginning with 'C' and containing 12 letters"
+    },
+    {
+      "word": "stadium",
+      "hint": "Sports term beginning with 'S' and containing 7 letters (stadium)"
+    },
+    {
+      "word": "arena",
+      "hint": "Sports term beginning with 'A' and containing 5 letters"
+    },
+    {
+      "word": "coach",
+      "hint": "Sports term beginning with 'C' and containing 5 letters (coach)"
+    },
+    {
+      "word": "captain",
+      "hint": "Sports term beginning with 'C' and containing 7 letters (captain)"
+    },
+    {
+      "word": "referee",
+      "hint": "Sports term beginning with 'R' and containing 7 letters (referee)"
+    },
+    {
+      "word": "umpire",
+      "hint": "Sports term beginning with 'U' and containing 6 letters"
+    },
+    {
+      "word": "athlete",
+      "hint": "Sports term beginning with 'A' and containing 7 letters (athlete)"
+    },
+    {
+      "word": "medal",
+      "hint": "Sports term beginning with 'M' and containing 5 letters"
+    },
+    {
+      "word": "trophy",
+      "hint": "Sports term beginning with 'T' and containing 6 letters (trophy)"
+    },
+    {
+      "word": "record",
+      "hint": "Sports term beginning with 'R' and containing 6 letters (record)"
+    },
+    {
+      "word": "victory",
+      "hint": "Sports term beginning with 'V' and containing 7 letters"
+    },
+    {
+      "word": "defeat",
+      "hint": "Sports term beginning with 'D' and containing 6 letters (defeat)"
+    },
+    {
+      "word": "competition",
+      "hint": "Sports term beginning with 'C' and containing 11 letters"
+    },
+    {
+      "word": "training",
+      "hint": "Sports term beginning with 'T' and containing 8 letters"
+    },
+    {
+      "word": "fitness",
+      "hint": "Sports term beginning with 'F' and containing 7 letters (fitness)"
+    },
+    {
+      "word": "endurance",
+      "hint": "Sports term beginning with 'E' and containing 9 letters"
+    },
+    {
+      "word": "strength",
+      "hint": "Sports term beginning with 'S' and containing 8 letters (strength)"
+    },
+    {
+      "word": "agility",
+      "hint": "Sports term beginning with 'A' and containing 7 letters (agility)"
+    },
+    {
+      "word": "teamwork",
+      "hint": "Sports term beginning with 'T' and containing 8 letters (teamwork)"
+    },
+    {
+      "word": "strategy",
+      "hint": "Sports term beginning with 'S' and containing 8 letters (strategy)"
+    },
+    {
+      "word": "sportsmanship",
+      "hint": "Sports term beginning with 'S' and containing 13 letters"
+    }
+  ],
+  "Music": [
+    {
+      "word": "music",
+      "hint": "Music term beginning with 'M' and containing 5 letters"
+    },
+    {
+      "word": "song",
+      "hint": "Music term beginning with 'S' and containing 4 letters"
+    },
+    {
+      "word": "album",
+      "hint": "Music term beginning with 'A' and containing 5 letters"
+    },
+    {
+      "word": "single",
+      "hint": "Music term beginning with 'S' and containing 6 letters"
+    },
+    {
+      "word": "melody",
+      "hint": "Music term beginning with 'M' and containing 6 letters"
+    },
+    {
+      "word": "harmony",
+      "hint": "Music term beginning with 'H' and containing 7 letters"
+    },
+    {
+      "word": "rhythm",
+      "hint": "Music term beginning with 'R' and containing 6 letters"
+    },
+    {
+      "word": "tempo",
+      "hint": "Music term beginning with 'T' and containing 5 letters"
+    },
+    {
+      "word": "pitch",
+      "hint": "Music term beginning with 'P' and containing 5 letters"
+    },
+    {
+      "word": "beat",
+      "hint": "Music term beginning with 'B' and containing 4 letters"
+    },
+    {
+      "word": "chord",
+      "hint": "Music term beginning with 'C' and containing 5 letters"
+    },
+    {
+      "word": "scale",
+      "hint": "Music term beginning with 'S' and containing 5 letters"
+    },
+    {
+      "word": "note",
+      "hint": "Music term beginning with 'N' and containing 4 letters"
+    },
+    {
+      "word": "octave",
+      "hint": "Music term beginning with 'O' and containing 6 letters"
+    },
+    {
+      "word": "lyrics",
+      "hint": "Music term beginning with 'L' and containing 6 letters"
+    },
+    {
+      "word": "verse",
+      "hint": "Music term beginning with 'V' and containing 5 letters"
+    },
+    {
+      "word": "chorus",
+      "hint": "Music term beginning with 'C' and containing 6 letters"
+    },
+    {
+      "word": "bridge",
+      "hint": "Music term beginning with 'B' and containing 6 letters"
+    },
+    {
+      "word": "hook",
+      "hint": "Music term beginning with 'H' and containing 4 letters"
+    },
+    {
+      "word": "refrain",
+      "hint": "Music term beginning with 'R' and containing 7 letters"
+    },
+    {
+      "word": "guitar",
+      "hint": "String instrument often played by strumming"
+    },
+    {
+      "word": "bass",
+      "hint": "Music term beginning with 'B' and containing 4 letters (bass)"
+    },
+    {
+      "word": "piano",
+      "hint": "Keyboard instrument with black and white keys"
+    },
+    {
+      "word": "keyboard",
+      "hint": "Input device with keys for typing"
+    },
+    {
+      "word": "drums",
+      "hint": "Music term beginning with 'D' and containing 5 letters"
+    },
+    {
+      "word": "violin",
+      "hint": "Small bowed string instrument"
+    },
+    {
+      "word": "cello",
+      "hint": "Music term beginning with 'C' and containing 5 letters (cello)"
+    },
+    {
+      "word": "viola",
+      "hint": "Music term beginning with 'V' and containing 5 letters (viola)"
+    },
+    {
+      "word": "harp",
+      "hint": "Music term beginning with 'H' and containing 4 letters (harp)"
+    },
+    {
+      "word": "flute",
+      "hint": "Music term beginning with 'F' and containing 5 letters"
+    },
+    {
+      "word": "clarinet",
+      "hint": "Music term beginning with 'C' and containing 8 letters"
+    },
+    {
+      "word": "oboe",
+      "hint": "Music term beginning with 'O' and containing 4 letters"
+    },
+    {
+      "word": "saxophone",
+      "hint": "Music term beginning with 'S' and containing 9 letters"
+    },
+    {
+      "word": "trumpet",
+      "hint": "Music term beginning with 'T' and containing 7 letters"
+    },
+    {
+      "word": "trombone",
+      "hint": "Music term beginning with 'T' and containing 8 letters"
+    },
+    {
+      "word": "tuba",
+      "hint": "Music term beginning with 'T' and containing 4 letters"
+    },
+    {
+      "word": "frenchhorn",
+      "hint": "Music term beginning with 'F' and containing 10 letters"
+    },
+    {
+      "word": "banjo",
+      "hint": "Music term beginning with 'B' and containing 5 letters"
+    },
+    {
+      "word": "ukulele",
+      "hint": "Music term beginning with 'U' and containing 7 letters"
+    },
+    {
+      "word": "mandolin",
+      "hint": "Music term beginning with 'M' and containing 8 letters"
+    },
+    {
+      "word": "synthesizer",
+      "hint": "Music term beginning with 'S' and containing 11 letters"
+    },
+    {
+      "word": "microphone",
+      "hint": "Device used to capture sound"
+    },
+    {
+      "word": "speaker",
+      "hint": "Music term beginning with 'S' and containing 7 letters"
+    },
+    {
+      "word": "amplifier",
+      "hint": "Music term beginning with 'A' and containing 9 letters"
+    },
+    {
+      "word": "mixer",
+      "hint": "Music term beginning with 'M' and containing 5 letters (mixer)"
+    },
+    {
+      "word": "equalizer",
+      "hint": "Music term beginning with 'E' and containing 9 letters"
+    },
+    {
+      "word": "studio",
+      "hint": "Music term beginning with 'S' and containing 6 letters (studio)"
+    },
+    {
+      "word": "recording",
+      "hint": "Music term beginning with 'R' and containing 9 letters"
+    },
+    {
+      "word": "producer",
+      "hint": "Music term beginning with 'P' and containing 8 letters"
+    },
+    {
+      "word": "composer",
+      "hint": "Music term beginning with 'C' and containing 8 letters (composer)"
+    },
+    {
+      "word": "conductor",
+      "hint": "Music term beginning with 'C' and containing 9 letters"
+    },
+    {
+      "word": "arranger",
+      "hint": "Music term beginning with 'A' and containing 8 letters"
+    },
+    {
+      "word": "performer",
+      "hint": "Music term beginning with 'P' and containing 9 letters"
+    },
+    {
+      "word": "vocalist",
+      "hint": "Music term beginning with 'V' and containing 8 letters"
+    },
+    {
+      "word": "singer",
+      "hint": "Music term beginning with 'S' and containing 6 letters (singer)"
+    },
+    {
+      "word": "band",
+      "hint": "Music term beginning with 'B' and containing 4 letters (band)"
+    },
+    {
+      "word": "orchestra",
+      "hint": "Music term beginning with 'O' and containing 9 letters"
+    },
+    {
+      "word": "ensemble",
+      "hint": "Music term beginning with 'E' and containing 8 letters"
+    },
+    {
+      "word": "choir",
+      "hint": "Music term beginning with 'C' and containing 5 letters (choir)"
+    },
+    {
+      "word": "quartet",
+      "hint": "Music term beginning with 'Q' and containing 7 letters"
+    },
+    {
+      "word": "duet",
+      "hint": "Music term beginning with 'D' and containing 4 letters"
+    },
+    {
+      "word": "solo",
+      "hint": "Music term beginning with 'S' and containing 4 letters (solo)"
+    },
+    {
+      "word": "concert",
+      "hint": "Music term beginning with 'C' and containing 7 letters"
+    },
+    {
+      "word": "festival",
+      "hint": "Music term beginning with 'F' and containing 8 letters"
+    },
+    {
+      "word": "gig",
+      "hint": "Music term beginning with 'G' and containing 3 letters"
+    },
+    {
+      "word": "tour",
+      "hint": "Music term beginning with 'T' and containing 4 letters (tour)"
+    },
+    {
+      "word": "playlist",
+      "hint": "Music term beginning with 'P' and containing 8 letters (playlist)"
+    },
+    {
+      "word": "streaming",
+      "hint": "Music term beginning with 'S' and containing 9 letters (streaming)"
+    },
+    {
+      "word": "vinyl",
+      "hint": "Music term beginning with 'V' and containing 5 letters (vinyl)"
+    },
+    {
+      "word": "cassette",
+      "hint": "Music term beginning with 'C' and containing 8 letters (cassette)"
+    },
+    {
+      "word": "compactdisc",
+      "hint": "Music term beginning with 'C' and containing 11 letters"
+    },
+    {
+      "word": "genre",
+      "hint": "Music term beginning with 'G' and containing 5 letters"
+    },
+    {
+      "word": "rock",
+      "hint": "Music term beginning with 'R' and containing 4 letters"
+    },
+    {
+      "word": "metal",
+      "hint": "Music term beginning with 'M' and containing 5 letters (metal)"
+    },
+    {
+      "word": "jazz",
+      "hint": "Music term beginning with 'J' and containing 4 letters"
+    },
+    {
+      "word": "blues",
+      "hint": "Music term beginning with 'B' and containing 5 letters (blues)"
+    },
+    {
+      "word": "classical",
+      "hint": "Music term beginning with 'C' and containing 9 letters (classical)"
+    },
+    {
+      "word": "opera",
+      "hint": "Music term beginning with 'O' and containing 5 letters"
+    },
+    {
+      "word": "pop",
+      "hint": "Music term beginning with 'P' and containing 3 letters"
+    },
+    {
+      "word": "hiphop",
+      "hint": "Music term beginning with 'H' and containing 6 letters"
+    },
+    {
+      "word": "rap",
+      "hint": "Music term beginning with 'R' and containing 3 letters"
+    },
+    {
+      "word": "country",
+      "hint": "Music term beginning with 'C' and containing 7 letters (country)"
+    },
+    {
+      "word": "folk",
+      "hint": "Music term beginning with 'F' and containing 4 letters"
+    },
+    {
+      "word": "electronic",
+      "hint": "Music term beginning with 'E' and containing 10 letters"
+    },
+    {
+      "word": "house",
+      "hint": "Music term beginning with 'H' and containing 5 letters"
+    },
+    {
+      "word": "techno",
+      "hint": "Music term beginning with 'T' and containing 6 letters"
+    },
+    {
+      "word": "trance",
+      "hint": "Music term beginning with 'T' and containing 6 letters (trance)"
+    },
+    {
+      "word": "dubstep",
+      "hint": "Music term beginning with 'D' and containing 7 letters"
+    },
+    {
+      "word": "reggae",
+      "hint": "Music term beginning with 'R' and containing 6 letters (reggae)"
+    },
+    {
+      "word": "soul",
+      "hint": "Music term beginning with 'S' and containing 4 letters (soul)"
+    },
+    {
+      "word": "funk",
+      "hint": "Music term beginning with 'F' and containing 4 letters (funk)"
+    },
+    {
+      "word": "disco",
+      "hint": "Music term beginning with 'D' and containing 5 letters (disco)"
+    },
+    {
+      "word": "soundtrack",
+      "hint": "Music term beginning with 'S' and containing 10 letters"
+    },
+    {
+      "word": "improvisation",
+      "hint": "Music term beginning with 'I' and containing 13 letters"
+    },
+    {
+      "word": "acoustic",
+      "hint": "Music term beginning with 'A' and containing 8 letters (acoustic)"
+    },
+    {
+      "word": "symphony",
+      "hint": "Music term beginning with 'S' and containing 8 letters"
+    },
+    {
+      "word": "concerto",
+      "hint": "Music term beginning with 'C' and containing 8 letters (concerto)"
+    },
+    {
+      "word": "sonata",
+      "hint": "Music term beginning with 'S' and containing 6 letters (sonata)"
+    },
+    {
+      "word": "ballad",
+      "hint": "Music term beginning with 'B' and containing 6 letters (ballad)"
+    }
+  ]
+}

@@ -1,13 +1,21 @@
 using System;
+using System.IO;
+using System.Linq;
 using System.Collections.Generic;
 using System.Text.Json;
 
 namespace Hangman
 {
+    public class WordInfo
+    {
+        public string word { get; set; }
+        public string hint { get; set; }
+    }
     public class WordEntry
     {
         public string word { get; set; }
         public string group { get; set; }
+        public string hint { get; set; }
     }
     public class GroupedWords
     {
@@ -16,33 +24,40 @@ namespace Hangman
     }
     internal class Program
     {
+        static List<string> history = new List<string>();
         static int gameOver = 9;
 
-        static (string word, string group) GetRandomWord(string filePath = "words.json")
+        static (string word, string group, string hint) GetRandomWord( string filePath = "words.json" )
         {
             var json = File.ReadAllText(filePath);
-            var groupsDict = JsonSerializer.Deserialize<Dictionary<string, List<string>>>(json);
+            var groupsDict = JsonSerializer.Deserialize<Dictionary<string, List<WordInfo>>>(json);
 
-            if (groupsDict == null || groupsDict.Count == 0)
+            if ( groupsDict == null || groupsDict.Count == 0 )
                 throw new Exception("No words found in JSON.");
 
             var allWords = groupsDict
-                .SelectMany(kvp => kvp.Value.Select(word => new WordEntry { word = word, group = kvp.Key }))
-                .ToList();
+    .SelectMany(kvp => kvp.Value.Select(item =>
+        new WordEntry
+        {
+            word = item.word,
+            hint = item.hint,
+            group = kvp.Key
+        }))
+    .ToList();
 
             var random = new Random();
             var entry = allWords[random.Next(allWords.Count)];
-            return (entry.word, entry.group);
+            return (entry.word, entry.group, entry.hint);
         }
 
-        static void Main(string[] args)
+        static void Main( string[] args )
         {
             Console.ForegroundColor = ConsoleColor.Magenta;
             GameDraw();
             GameMenu();
         }
 
-        static void GameDraw()
+        static void GameDraw( )
         {
             Console.SetCursorPosition(10, 2);
             Console.Write("===========");
@@ -50,7 +65,7 @@ namespace Hangman
             Console.SetCursorPosition(10, 6);
             Console.Write("===========");
 
-            for (int y = 3; y < 6; y++)
+            for ( int y = 3; y < 6; y++ )
             {
                 Console.SetCursorPosition(10, y);
                 Console.Write("|");
@@ -63,35 +78,66 @@ namespace Hangman
             Console.ResetColor();
         }
 
-        static void GameMenu()
+        static void GameMenu( )
         {
-            Console.SetCursorPosition(1, 9);
-            Console.WriteLine("Choose an option: \n1. Start a new game of Hangman\n2. See recent games\n3. Rules\n4. Exit");
-            string answer = Console.ReadLine();
-            switch (answer)
+            while ( true )
             {
-                case "1":
-                    Console.Clear();
-                    GameStart();
-                    break;
-                case "2":
-                    break;
-                case "3":
-                    break;
-                case "4":
-                    break;
+                Console.Clear();
+                GameDraw();
+
+                Console.SetCursorPosition(1, 9);
+                Console.WriteLine("Choose an option:");
+                Console.WriteLine("1. Start a new game of Hangman");
+                Console.WriteLine("2. See recent games");
+                Console.WriteLine("3. Rules");
+                Console.WriteLine("4. Exit");
+
+                string answer = Console.ReadLine();
+
+                switch ( answer )
+                {
+                    case "1":
+                        Console.Clear();
+                        gameOver = 9;
+                        GameStart();
+                        break;
+
+                    case "2":
+                        ShowHistory();
+                        break;
+
+                    case "3":
+                        ShowRules();
+                        break;
+
+                    case "4":
+                        Environment.Exit(0);
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid option!");
+                        Console.ReadKey();
+                        break;
+                }
             }
         }
 
-        static void GameStart()
+        static void GameStart( )
         {
-            var (word, group) = GetRandomWord("words.json");
-            Console.WriteLine($"Random word: {word}, Group: {group}");
+            gameOver = 9;
+            var (word, group, hint) = GetRandomWord("words.json");
+            List<char> usedLetters = new List<char>();
 
-            int mistakes = 9 - gameOver;
-            while (gameOver > 0)
+            char[] hiddenWord = new char[word.Length];
+
+            for ( int i = 0; i < word.Length; i++ )
             {
-                switch (mistakes)
+                hiddenWord[i] = '_';
+            }
+            Console.WriteLine($"Random word: {word}, Group: {group}");
+            while ( gameOver > 0 )
+            {
+                switch ( 9 - gameOver )
                 {
                     case 0:
                         Console.Clear();
@@ -242,19 +288,143 @@ namespace Hangman
     =======================");
                         break;
                 }
-                char input = Console.ReadKey().KeyChar;
-                Checker(word, input);
+                Console.WriteLine();
+                Console.WriteLine($"Category: {group}");
+                Console.WriteLine();
+                Console.WriteLine($"Hint: {hint}");
+                Console.WriteLine(string.Join(" ", hiddenWord));
+                Console.WriteLine();
+                Console.WriteLine("Used letters: " + string.Join(", ", usedLetters));
+                Console.WriteLine();
+                Console.Write("Enter a letter: ");
+                string userInput = Console.ReadLine();
+
+                if ( string.IsNullOrWhiteSpace(userInput) )
+                {
+                    Console.WriteLine("Please enter a letter.");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                if ( userInput.Length != 1 )
+                {
+                    Console.WriteLine("Enter only one letter.");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                char input = char.ToLower(userInput[0]);
+
+                if ( !char.IsLetter(input) )
+                {
+                    Console.WriteLine("Only letters are allowed.");
+                    Console.ReadKey();
+                    continue;
+                }
+                if ( usedLetters.Contains(input) )
+                {
+                    Console.WriteLine("You already used that letter.");
+                    Console.ReadKey();
+                    continue;
+                }
+                input = char.ToLower(input);
+
+                if ( !usedLetters.Contains(input) )
+                {
+                    usedLetters.Add(input);
+
+                    bool found = false;
+
+                    for ( int i = 0; i < word.Length; i++ )
+                    {
+                        if ( char.ToLower(word[i]) == input )
+                        {
+                            hiddenWord[i] = word[i];
+                            found = true;
+                        }
+                    }
+
+                    if ( !found )
+                    {
+                        gameOver--;
+                    }
+                }
+                if ( !hiddenWord.Contains('_') )
+                {
+                    history.Add($"{word} | WIN | Mistakes: {9 - gameOver}");
+
+                    Console.Clear();
+                    Console.WriteLine($"You win! The word was: {word}");
+                    Console.ReadKey();
+                    Console.Clear();
+                    GameDraw();
+                    return;
+                }
+                if ( gameOver <= 0 )
+                {
+                    history.Add($"{word} | LOSS | Mistakes: 9");
+
+                    Console.Clear();
+                    Console.WriteLine($"You lost! The word was: {word}");
+                    Console.ReadKey();
+                    Console.Clear();
+                    GameDraw();
+                    return;
+                }
             }
         }
-
-        static void Checker(string word, char a)
+        static void ShowHistory( )
         {
-            bool check = false;
-            foreach (char c in word)
+            Console.Clear();
+
+            Console.WriteLine("==================================");
+            Console.WriteLine("         GAME HISTORY");
+            Console.WriteLine("==================================");
+            Console.WriteLine();
+
+            if ( history.Count == 0 )
             {
-                if (c == a) { check = true; }
+                Console.WriteLine("No games played yet.");
             }
-            if (check == false) { gameOver++; }
+            else
+            {
+                for ( int i = 0; i < history.Count; i++ )
+                {
+                    Console.WriteLine($"Game {i + 1}: {history[i]}");
+                }
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Press any key to return...");
+            Console.ReadKey();
+
+            Console.Clear();
+            GameDraw();
+            GameMenu();
+        }
+        static void ShowRules( )
+        {
+            Console.Clear();
+
+            Console.WriteLine("==================================");
+            Console.WriteLine("            RULES");
+            Console.WriteLine("==================================");
+            Console.WriteLine();
+
+            Console.WriteLine("1. The game chooses a random word.");
+            Console.WriteLine("2. Guess the word one letter at a time.");
+            Console.WriteLine("3. Correct letters are revealed.");
+            Console.WriteLine("4. Wrong letters add parts to the hangman.");
+            Console.WriteLine("5. If you reveal the whole word, you win.");
+            Console.WriteLine("6. If the hangman is completed, you lose.");
+            Console.WriteLine();
+
+            Console.WriteLine("Press any key to return...");
+            Console.ReadKey();
+
+            Console.Clear();
+            GameDraw();
+            GameMenu();
         }
     }
 }
